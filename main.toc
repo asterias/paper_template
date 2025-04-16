@@ -1,6 +1,0 @@
-\contentsline {title}{This is a title.}{1}{chapter.1}%
-\authcount {1}
-\contentsline {author}{}{1}{chapter.1}%
-\contentsline {section}{\numberline {1}Introduction}{2}{section.1.1}%
-\contentsline {section}{\numberline {2}Technical Overview}{2}{section.1.2}%
-\contentsline {section}{\numberline {3}Preliminaries}{2}{section.1.3}%
