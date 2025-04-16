@@ -1,0 +1,54 @@
+% !TEX root = main.tex
+
+\PassOptionsToPackage{dvipsnames}{xcolor}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[dvipsnames]{xcolor}
+
+% allow renewal of these commands as defined in llncs 
+\let\proof\relax
+\let\endproof\relax
+
+\usepackage{adjustbox}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{bm} % math boldsymbol
+\usepackage{booktabs}
+% \usepackage{balance} % for balancing the last page 
+\usepackage{cancel}
+% \usepackage{changepage} % for adjustwidth
+\usepackage{colortbl} % highlighting table cells
+\usepackage[labelfont=bf,font={small}]{caption}
+\usepackage{hyperref} % must be loaded before cleveref 
+%\usepackage{cleveref} % included in acmart
+\usepackage{cancel}
+\usepackage{xcolor}
+\usepackage{cite}
+%\usepackage{enumitem}
+% \usepackage{float}
+\usepackage[utf8]{inputenc}
+\usepackage{csquotes} % must be loaded after inputenc
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{scalefnt}
+\usepackage{mathtools}
+\usepackage{mdframed}
+\usepackage{pifont}
+% \usepackage{subcaption} % for subfigures 
+\usepackage{tcolorbox}
+% \usepackage{tabularx}
+\usepackage{url}
+\usepackage{xspace}
+\usepackage{tcolorbox}
+\usepackage{wrapfig}
+\usepackage{xcolor}
+\usepackage[skip=0.5em]{caption}
+
+% Packages with some kind of dependency
+
+\usepackage[lambda,adversary,asymptotics,sets,landau,probability,operators]{cryptocode}
+
+% cleveref must be loaded after any other cross-referencing packages
+% (ex. hyperref, algorithmicx, listings, ntheorem).
+% Only things that need to be loaded after are hypdvips, autonum
+\usepackage[noabbrev,capitalize]{cleveref}

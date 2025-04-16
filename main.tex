@@ -1,0 +1,103 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Paper parameters
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ifdefined\fullversion
+\else
+\def\fullversion{0}    % 0 = conference version; 1 = full version
+\fi
+
+\ifdefined\cameraversion
+\else
+\def\cameraversion{0}    % 0 = long version; 1 = proceedings version
+\fi
+
+\ifdefined\commentson
+\else
+\def\commentson{0}    % 0 = no comments; 1 = comments on
+\fi
+
+
+\def\showoverflow{1}   % 1 = show overflows
+\def\allow{1}      % 0 = remove todo command
+\def\anonymous{1}      % 1 = anonymous
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Document class 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\PassOptionsToPackage{dvipsnames}{xcolor}
+\PassOptionsToPackage{noabbrev,capitalize}{cleverref}
+\documentclass[envcountsame,runningheads,notitlepage]{llncs}
+
+\ifnum\fullversion=1
+\usepackage[a4paper, margin=1.1in]{geometry}
+\setlength{\marginparwidth}{2.5cm}
+\fi
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Packages and preamble 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%hmmax and bmmax are used to deal with an annoying "Too many math alphabets used in version normal" error.
+\newcommand\hmmax{0}
+\newcommand\bmmax{0}
+\input{packages}
+\input{preamble}
+\input{zz_header}
+\allowdisplaybreaks
+
+\begin{document}
+
+\title{This is a title.}
+
+\author{}
+\institute{}
+
+\date{}
+\maketitle
+
+\setcounter{tocdepth}{2}
+
+\begin{abstract}
+    \input{sections/abstract}
+\end{abstract}
+
+\thispagestyle{plain}
+\pagestyle{plain}
+
+\newpage
+
+\section{Introduction}
+\label{sec:intro}
+%\input{sections/intro}
+
+\section{Technical Overview}
+\label{sec:tech-overview}
+%\input{sections/overview}
+
+\section{Preliminaries}
+\label{sec:preliminaries}
+%\input{sections/preliminaries}
+
+
+% \bibliographystyle{alpha-short}
+\bibliographystyle{plain}
+\bibliography{cryptobib/abbrev0,cryptobib/crypto, main}
+
+
+\newpage
+\appendix
+\chapter*{Supplementary Materials}
+
+% Uncomment for table of contents 
+
+% hack to prevent the table of contents
+% from appearing on a new page
+\begingroup
+\let\cleardoublepage\relax
+\let\clearpage\relax
+\tableofcontents
+\endgroup
+
+
+%\input{sections/appendix}
+
+\end{document}
