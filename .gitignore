@@ -1,1 +1,29 @@
+# macOS metadata
 .DS_Store
+
+# LaTeX build files
+*.aux
+*.bbl
+*.blg
+*.brf
+*.fls
+*.fdb_latexmk
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+*.lol
+*.nav
+*.snm
+
+# Output files
+*.pdf
+*.dvi
+*.ps
+
+# Editor/IDE metadata
+.vscode/
+*.swp
+*~
